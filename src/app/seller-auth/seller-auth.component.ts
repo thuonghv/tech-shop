@@ -13,11 +13,9 @@ export class SellerAuthComponent implements OnInit {
   constructor(private seller: SellerService, private router: Router) {}
 
   ngOnInit(): void {
-    if (this.seller.isLoggedIn()) {
-      this.router.navigate(['/seller-home']); // Chuyển hướng đến seller-home
-    } else {
+   
       this.seller.reloadSeller();
-    }
+    
     
   }
   signUp(data: signUp): void {

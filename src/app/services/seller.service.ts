@@ -29,10 +29,7 @@ export class SellerService {
     }
   }
   // Trong SellerService
-isLoggedIn(): boolean {
-  // Thực hiện kiểm tra đăng nhập ở đây
-  // Trả về true nếu đã đăng nhập, ngược lại trả về false
-}
+
 
   userLogin(data:login){
    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
